@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>changed</key>
+	<dict>
+		<key>command</key>
+		<string>#!/usr/bin/env bash
+
+cd "$TM_PROJECT_DIRECTORY"
+ruby "$TM_BUNDLE_SUPPORT/bin/analyse_current_file"
+
+ruby -e "TextMate.exit_show_tool_tip '$OUTPUT'"</string>
+	</dict>
+	<key>isDelta</key>
+	<true/>
+	<key>uuid</key>
+	<string>30B75812-5C37-49EB-ADB2-0BBA94C72B3B</string>
+</dict>
+</plist>
